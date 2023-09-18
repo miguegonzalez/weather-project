@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "es2016",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "incremental": false,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node", "cypress", "vite/client"],
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "components.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "cypress/**/*.ts",
+    "cypress/**/*.tsx",
+    "types.d.ts", "src/components/weather-card/WeatherCard.test.js",
+  ],
+  "exclude": ["dist", "node_modules"]
+}
